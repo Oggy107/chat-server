@@ -1,0 +1,25 @@
+{
+  "name": "chat-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/src/server.js",
+  "scripts": {
+    "dev": "nodemon --ext \"ts,js,json\" --exec \"npx ts-node src/server.ts\"",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "stream-chat": "^6.4.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.23",
+    "nodemon": "^2.0.15"
+  }
+}
