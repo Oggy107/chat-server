@@ -8,6 +8,7 @@ import AuthRouter from './routes/auth'
 const app: Express = express()
 
 app.use(cors())
+app.use(express.urlencoded({ extended: true }))
 app.use(AuthRouter)
 
 app.listen(PORT, () => {
